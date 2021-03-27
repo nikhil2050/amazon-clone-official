@@ -4,11 +4,12 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Cart from './components/Cart';
 import Header from './components/Header'
 import Home from './components/Home';
+import styled from 'styled-components'
 
 function App() {
   return (
     <Router>
-    <div className="App">
+    <Container className="App">
       <Header />
         
       <Switch>
@@ -20,9 +21,14 @@ function App() {
           <Home />
         </Route>
       </Switch>
-    </div>
+    
+    </Container>
     </Router>
   );
 }
 
 export default App;
+
+const Container = styled.div`
+  background-color: #eaeded;
+`

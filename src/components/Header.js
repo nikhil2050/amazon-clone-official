@@ -12,7 +12,9 @@ function Header() {
     return (
         <Container>
             <HeaderLogo >
-                <img src={"https://i.imgur.com/7I9Was5.png"} />
+                <Link to="/">
+                    <img src={"https://i.imgur.com/7I9Was5.png"} />
+                </Link>
             </HeaderLogo >
             
             <HeaderOptionAddress>
@@ -32,7 +34,7 @@ function Header() {
 
             <HeaderNavItems>
                 <HeaderOption>
-                    <OptionLineOne>Hello Nazari</OptionLineOne>
+                    <OptionLineOne>Hello Nyx,</OptionLineOne>
                     <OptionLineTwo>Account & Lists</OptionLineTwo>
                 </HeaderOption>
                 <HeaderOption>
