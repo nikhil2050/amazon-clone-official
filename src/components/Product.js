@@ -1,16 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Product() {
+function Product(props) {
+
+    console.log(props)
+    
     return (
         <Container>
-            <Title> Ipad Pro
-            </Title>
-            <Price> 1499
-            </Price>
-            <Rating> ⭐⭐⭐
+            <Title> { props.title } </Title>
+            <Price> INR { props.price } </Price>
+            <Rating> {
+                Array(props.rating).fill().map(rating => <p>⭐</p>)
+            }
             </Rating>
-            <Image src='https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003?wid=470&hei=556&fmt=png-alpha&.v=1583552356577'/>
+            <Image src={ props.image }/>
             <ActionSection>
                 <AddToCartButton>
                     Add to Cart
@@ -39,6 +42,7 @@ const Price = styled.span`
     margin-top: 3px;
 `
 const Rating = styled.div`
+    display: flex;
 `
 const Image = styled.img`
     max-height: 200px;
