@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=W5j0dpHxCj4
+
 > npx create-react-app amazon-clone-official
 > cd
 > npm start
